@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Event manager v0.1</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</head>
+<body>
+	<h1>New Event Sequence</h1>
+	<hr>
+	<form id="event-form" type="POST">
+		Event name: <input type="text" id="name"><br> 
+		Date : <input type="text" id="date"><br> 
+		Priority:
+		<select id="priority">
+		  <option value="important">Important</option>
+		  <option value="very_important">Very important</option>
+		  <option value="not_importan">Not important</option>
+		</select>
+		<input class="w3-btn w3-green" type="submit" value="Submit">
+	</form>
+	<hr>
+	<h2>Events in the next 7 days:</h2>
+	<ul class="w3-ul w3-border" id="event_container"></ul>
+
+</body>
+</html>
